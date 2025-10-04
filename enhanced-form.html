@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sample multi-section HTML5 page with lists, tables, media, and a fully-featured form.">
+    <title>Sample HTML5 Page</title>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Welcome to Our Sample Web Page</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#media">Media</a></li>
+                <li><a href="#contact">Contact Form</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- About Section with Lists -->
+        <section id="about">
+            <h2>About Our Company</h2>
+            <p>We focus on delivering quality products in the following categories:</p>
+            <ul>
+                <li>Electronics</li>
+                <li>Books</li>
+                <li>Home Appliances</li>
+                <li>Clothing</li>
+            </ul>
+            <ol>
+                <li>Research and Development</li>
+                <li>Design</li>
+                <li>Manufacturing</li>
+                <li>Customer Support</li>
+            </ol>
+        </section>
+
+        <!-- Products Section with Table -->
+        <section id="products">
+            <h2>Our Product Range</h2>
+            <table border="1" summary="List of products and their prices">
+                <caption>Available Products</caption>
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Category</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Smartphone</td>
+                        <td>Electronics</td>
+                        <td>$699</td>
+                    </tr>
+                    <tr>
+                        <td>Blender</td>
+                        <td>Home Appliances</td>
+                        <td>$49</td>
+                    </tr>
+                    <tr>
+                        <td>Novel Book</td>
+                        <td>Books</td>
+                        <td>$15</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Media Section -->
+        <section id="media">
+            <h2>Media</h2>
+            <p>Check out our promotional video and listen to our jingle:</p>
+            <video controls width="480">
+                <source src="promo.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <audio controls>
+                <source src="jingle.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form action="#" method="post">
+                <!-- Personal Info -->
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label for="fname">First Name:</label>
+                    <input type="text" id="fname" name="fname" required minlength="2"><br><br>
+
+                    <label for="lname">Last Name:</label>
+                    <input type="text" id="lname" name="lname" required minlength="2"><br><br>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required><br><br>
+
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="1234567890"><br><br>
+                </fieldset>
+
+                <!-- Preferences -->
+                <fieldset>
+                    <legend>Preferences</legend>
+                    <label for="contact-method">Preferred Contact Method:</label>
+                    <select id="contact-method" name="contact-method" required>
+                        <option value="">--Select--</option>
+                        <option value="email">Email</option>
+                        <option value="phone">Phone</option>
+                    </select><br><br>
+
+                    <p>Interested Products:</p>
+                    <input type="checkbox" id="electronics" name="interests" value="Electronics">
+                    <label for="electronics">Electronics</label><br>
+
+                    <input type="checkbox" id="books" name="interests" value="Books">
+                    <label for="books">Books</label><br>
+
+                    <input type="checkbox" id="clothing" name="interests" value="Clothing">
+                    <label for="clothing">Clothing</label><br>
+                </fieldset>
+
+                <!-- Message -->
+                <fieldset>
+                    <legend>Message</legend>
+                    <label for="message">Your Message:</label><br>
+                    <textarea id="message" name="message" rows="5" cols="40" required></textarea>
+                </fieldset>
+
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Sample Company. All rights reserved.</p>
+    </footer>
+</body>
+</html>
